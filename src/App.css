@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow:scroll; 
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.maindiv{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  overflow:inherit;
+}
+.flexdirect{
+  flex-direction: row;
+}
+.app-bg{
+  background:linear-gradient(0deg, rgba(0,0,0,0.2),rgba(0,0,0,0.3)), url(./bg1.jpg);
+  height:80vh;
+  background-size:cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+}
+.flex-child {
+  flex: 1;
+  
+} 
+.aa{
+  margin-top: 10px;
+} 
+
+.flex-child:first-child {
+  margin-right: 0px;
+} 
+.topleft{
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+.bottomleftrow{
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+.bottomrightrow{
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+.date{
+  margin-bottom: 0px;
+}
+body{
+  background-color: 	#F5F5F5;
+  margin-top: 25px;
+}
+.side-bg{
+  background-color:rgba(0,0,0,0.7);
+  padding: 20px;
+}
+.footer{
+  margin-bottom:20px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 600px) {
+ 
+ 
+  .maindiv{
+   
+    margin-right: 5px;
   }
-  to {
-    transform: rotate(360deg);
+  .app-bg{
+    
+    padding: 250px 50px;
+  }
+  .flexdirect{
+    flex-direction: column;
+  }
+  .bottomleftrow{
+    padding-left: 0;
   }
 }
